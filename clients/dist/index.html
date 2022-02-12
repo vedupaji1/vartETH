@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VARt ETH</title>
+  <!--Linking Manifest File-->
+  <link rel="manifest" href="data:application/json;base64,ew0KICAic2hvcnRfbmFtZSI6ICJFVEgiLA0KICAibmFtZSI6ICJWQVJ0IEVUSCIsDQogICJpY29ucyI6IFsNCiAgICB7DQogICAgICAic3JjIjogImljb25zL21hbmlmZXN0LWljb24tMTkyLm1hc2thYmxlLnBuZyIsDQogICAgICAic2l6ZXMiOiAiMTkyeDE5MiIsDQogICAgICAidHlwZSI6ICJpbWFnZS9wbmciLA0KICAgICAgInB1cnBvc2UiOiAiYW55Ig0KICAgIH0sDQogICAgew0KICAgICAgInNyYyI6ICJpY29ucy9tYW5pZmVzdC1pY29uLTE5Mi5tYXNrYWJsZS5wbmciLA0KICAgICAgInNpemVzIjogIjE5MngxOTIiLA0KICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIiwNCiAgICAgICJwdXJwb3NlIjogIm1hc2thYmxlIg0KICAgIH0sDQogICAgew0KICAgICAgInNyYyI6ICJpY29ucy9tYW5pZmVzdC1pY29uLTUxMi5tYXNrYWJsZS5wbmciLA0KICAgICAgInNpemVzIjogIjUxMng1MTIiLA0KICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIiwNCiAgICAgICJwdXJwb3NlIjogImFueSINCiAgICB9LA0KICAgIHsNCiAgICAgICJzcmMiOiAiaWNvbnMvbWFuaWZlc3QtaWNvbi01MTIubWFza2FibGUucG5nIiwNCiAgICAgICJzaXplcyI6ICI1MTJ4NTEyIiwNCiAgICAgICJ0eXBlIjogImltYWdlL3BuZyIsDQogICAgICAicHVycG9zZSI6ICJtYXNrYWJsZSINCiAgICB9DQogIF0sDQogICJzdGFydF91cmwiOiAiLiIsDQogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLA0KICAidGhlbWVfY29sb3IiOiAiIzAwMDAwMCIsDQogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMxZTFlMWUiLA0KICAib3JpZW50YXRpb24iOiJhbnkiDQp9" />
+
+  <!-- Google Fonts Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Acme&family=Balsamiq+Sans&family=Kanit:ital,wght@1,300&family=Mulish:ital,wght@1,900&family=PT+Sans:ital,wght@0,400;1,700&family=Prompt:wght@500&family=Rubik:wght@600&family=Secular+One&family=Source+Sans+Pro&family=Titillium+Web:wght@600;700;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Acme&family=Balsamiq+Sans&family=Inconsolata:wght@500&family=Kanit:ital,wght@1,300&family=Mulish:ital,wght@1,900&family=PT+Sans:ital,wght@0,400;1,700&family=Prompt:wght@500&family=Rubik:wght@600&family=Secular+One&family=Source+Sans+Pro&family=Titillium+Web:wght@600;700;900&display=swap"
+    rel="stylesheet">
+
+
+  <!--Font Awesome CDN Link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="/assets/favicon.2008b721.svg" sizes="16x16" type="image/svg">
+  <script>
+    if ("serviceWorker" in  navigator) {
+      navigator.serviceWorker.register("/service-worker.js");
+    }
+  </script>
+  <script>
+    const changeElemProps = () => {
+      if (document.readyState === "complete") {
+        if ((document.getElementsByTagName("body")[0].offsetWidth <= 380) && (document.getElementsByClassName(
+            "dataShowerMain")[0] !== undefined)) {
+          let newWidth = document.getElementsByClassName("dataShowerMain")[0].offsetWidth - 80;
+          for (let i = 0; i < document.getElementsByClassName("infoBlockData").length; i++) {
+            document.getElementsByClassName("infoBlockData")[i].style.width = newWidth + "px";
+          }
+        }
+        if ((document.getElementsByTagName("body")[0].offsetWidth <= 480) && (document.getElementsByClassName(
+            "sendETHTakeInfo")[0] !== undefined)) {
+          let newWidth = Math.round((document.getElementsByTagName("body")[0].offsetWidth - ((document
+            .getElementsByTagName("body")[0].offsetWidth * 4) / 100)) - 90);
+
+          document.getElementsByClassName("sendETHTakeInfo")[0].style.width = newWidth + "px";
+          document.getElementsByClassName("sendETHTakeInfo")[1].style.width = newWidth + "px";
+        }
+
+        if ((document.getElementsByTagName("body")[0].offsetWidth <= 480) && (document.getElementsByClassName(
+            "takeInfoBlock")[0] !== undefined)) {
+          let newWidth = Math.round((document.getElementsByTagName("body")[0].offsetWidth - ((document
+            .getElementsByTagName("body")[0].offsetWidth * 4) / 100)) - 90);
+
+          document.getElementsByClassName("takeInfoBlock")[0].style.width = newWidth + "px";
+          document.getElementsByClassName("takeInfoBlock")[1].style.width = newWidth + "px";
+        }
+      }
+    }
+  </script>
+  <script type="module" crossorigin src="/assets/index.ade76c96.js"></script>
+  <link rel="modulepreload" href="/assets/vendor.51f9a2bb.js">
+  <link rel="stylesheet" href="/assets/index.83dfdc7f.css">
+</head>
+
+<body onload="changeElemProps()" onresize="changeElemProps()">
+  <div id="root"></div>
+  
+
+</body>
+
+</html>
