@@ -4,11 +4,7 @@ const http = require("http").createServer(app);
 const fs = require("fs");
 const mongoose = require("mongoose");
 const path = require("path");
-const io = require("socket.io")(http, {
-    cors: { // Because Of This Cors Problem In Socket.io Solves, Visit "https://www.educative.io/edpresso/how-to-fix-socketio-cors-error-in-react-with-node" For More Information.
-        origin: "*"
-    }
-});
+const io = require("socket.io")(http);
 
 // This Is Used From Removing Cors Problem.
 /*const cors = require('cors');
