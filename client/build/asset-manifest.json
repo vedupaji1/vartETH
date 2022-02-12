@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1a0f74fd.chunk.css",
+    "main.js": "/static/js/main.6047e8f1.chunk.js",
+    "main.js.map": "/static/js/main.6047e8f1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4b83ab23.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4b83ab23.js.map",
+    "static/js/2.a2f12d72.chunk.js": "/static/js/2.a2f12d72.chunk.js",
+    "static/js/2.a2f12d72.chunk.js.map": "/static/js/2.a2f12d72.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.1a0f74fd.chunk.css.map": "/static/css/main.1a0f74fd.chunk.css.map",
+    "static/js/2.a2f12d72.chunk.js.LICENSE.txt": "/static/js/2.a2f12d72.chunk.js.LICENSE.txt",
+    "static/media/mainSvgBackground.c9a8acda.svg": "/static/media/mainSvgBackground.c9a8acda.svg",
+    "static/media/metamaskLogo.dabbc866.png": "/static/media/metamaskLogo.dabbc866.png",
+    "static/media/moneyTransfer.5bb7aaca.svg": "/static/media/moneyTransfer.5bb7aaca.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4b83ab23.js",
+    "static/js/2.a2f12d72.chunk.js",
+    "static/css/main.1a0f74fd.chunk.css",
+    "static/js/main.6047e8f1.chunk.js"
+  ]
+}
