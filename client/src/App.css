@@ -1,0 +1,647 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #1f1b2d;
+}
+
+/* Header, Start */
+
+.headerMainTop {
+    background-color: #1f1b2d;
+    color: rgb(255, 0, 0);
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+}
+
+.headerSub {
+    padding: 1.5rem 0rem 0rem 8rem;
+}
+
+.mainTitle {
+    margin: 0;
+    font-size: 3rem;
+    font-family: 'Mulish', sans-serif;
+    color: rgb(151 153 209);
+    /* rgba(248, 117, 55, 1) */
+
+}
+
+.subTitle {
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Mulish', sans-serif;
+    cursor: pointer;
+}
+
+.svgImageShower {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    padding-bottom: 5rem;
+}
+
+
+.svgBackgroundImage {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    margin-top: 5rem;
+}
+
+.svgBackgroundImage img {
+    width: 57%;
+}
+
+.backSVGImage {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.operationDiv {
+    /* Operation Button Styling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    font-size: 2.5rem;
+    color: white;
+    margin: 2rem 2rem 0rem 0rem;
+}
+
+.operationBtn1 img {
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+}
+
+.operationBtn2 {
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.operationBtn2:hover {
+    color: #9799d1;
+}
+
+/* DataShower, Start */
+
+.infoShowerMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.dataShowerMain,
+.transShowerMain {
+    background-color: #888ac9;
+    height: auto;
+    padding-bottom: 2rem;
+    width: 50rem;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 2rem 0.01rem #787ab8;
+}
+
+.dataShowerHeading,
+.formContainerHeading {
+    background-color: #5f61b4;
+    width: 7rem;
+    margin-top: -2.5rem;
+    margin-left: 5rem;
+    font-family: 'Mulish', sans-serif;
+    font-size: 2.5rem;
+    color: #dddeff;
+    /* border-top-left-radius: 25
+px
+; */
+    padding: 1rem 0rem 1rem 5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.dataShowerHeading:hover,
+.formContainerHeading:hover {
+    color: white;
+}
+
+.dataShowerInfoBlock {
+    height: 3.1rem;
+    background-color: #dddeff;
+    display: flex;
+    margin-top: 1rem;
+    transition: margin 0.5s;
+}
+
+.firstDataShowerInfoBlock {
+    margin-top: 4rem;
+}
+
+.infoBlockHeading {
+    background-color: #5f61b4;
+    width: 7rem;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.5rem;
+    color: #dddeff;
+    padding: 0.6rem 0rem 0.6rem 5rem;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.infoBlockHeading:hover {
+    color: white;
+}
+
+.infoBlockData {
+    padding: 0.5rem 0rem 0rem 2rem;
+    font-size: 1.5rem;
+    color: #534488;
+    font-family: 'Titillium Web', sans-serif;
+    transition: color 0.5s;
+    /* font-family: 'Acme', sans-serif; */
+    /* font-family: 'Balsamiq Sans', cursive; */
+    /* font-family: 'Inconsolata', monospace; */
+    /* font-family: 'Kanit', sans-serif; */
+    /* font-family: 'Mulish', sans-serif; */
+    /* font-family: 'Prompt', sans-serif; */
+    /* font-family: 'PT Sans', sans-serif; */
+    /* font-family: 'Rubik', sans-serif; */
+    /* font-family: 'Secular One', sans-serif; */
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    /* font-family: 'Titillium Web', sans-serif */
+}
+
+.infoBlockData:hover {
+    color: #362e52;
+}
+
+/* Transaction Shower, Start */
+
+.transShowerMain {
+    margin-top: 10rem;
+    /* Rest Of Styling Properties Written With "dataShowerMain" Class */
+}
+
+.transShowerInfoBlock {
+    height: auto;
+    background-color: #dddeff;
+    display: flex;
+    margin-top: 1.5rem;
+    display: block;
+}
+
+.transactionContainer {
+    max-height: 38rem;
+    margin-top: 4rem;
+    overflow-y: hidden;
+    transition: all 0.5s;
+}
+
+.noTransactionShower {
+    padding: 0.5rem 0rem;
+    font-size: 1.8rem;
+    color: #534488;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    background-color: #dddeff;
+}
+
+
+.transactionContainer::-webkit-scrollbar-thumb {
+    background: #5f61b4;
+}
+
+.transactionContainer::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+/* Send ETH, Start */
+
+.sendETHBody,
+.mainFormContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 8rem;
+}
+
+.sendETHMain,
+.subFormContainer {
+    background-color: #888ac9;
+    height: auto;
+    padding-bottom: 2rem;
+    width: 50rem;
+    border-radius: 0.5rem;
+    /* box-shadow: 0rem 0rem 2rem 0.01rem #787ab8; */
+}
+
+.sendETHHeading,
+.formContainerHeading {
+    width: 12rem;
+}
+
+.sendETHTakeInfo,
+.takeInfoBlock {
+    border: none;
+    height: 2.9rem;
+    background-color: #dddeff;
+    display: flex;
+    font-family: 'Titillium Web', sans-serif;
+    padding-left: 2rem;
+    color: #534488;
+    width: 36rem;
+}
+
+.sendETHTakeInfo:focus,
+.takeInfoBlock:focus {
+    outline: none;
+
+}
+
+::-webkit-input-placeholder {
+    /* Edge */
+    color: #534488;
+
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer */
+    color: #534488;
+
+}
+
+::placeholder {
+    color: #534488;
+
+}
+
+.sendETHSubmitBTN,
+.submitBTN {
+    font-size: 2rem;
+    border-radius: 5rem;
+    background-color: #5f61b4;
+    padding: 0.5rem 5rem 0.5rem 5rem;
+    color: #dddeff;
+    border-radius: 0.6rem;
+    margin-top: 0rem;
+    font-family: 'Titillium Web', sans-serif;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.confirmCode {
+    transition: all 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.sendETHSubmitBTN:hover,
+.submitBTN:hover {
+    background-color: #383a9e;
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1500px) {
+    .backSVGImage img {
+        width: 120%;
+        margin-left: -5%;
+    }
+
+    .svgBackgroundImage img {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .backSVGImage img {
+        width: 130%;
+        margin-left: -10%;
+        margin-top: -5%;
+    }
+
+    .svgBackgroundImage img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .backSVGImage img {
+        width: 145%;
+        margin-left: -15%;
+        margin-top: -5%;
+    }
+
+    .svgBackgroundImage img {
+        width: 95%;
+    }
+
+    .infoShowerMain {
+        width: 100%;
+    }
+
+    .dataShowerMain,
+    .transShowerMain,
+    .sendETHMain,
+    .subFormContainer {
+        width: 96%;
+        border-radius: 0.3rem;
+        box-shadow: 0rem 0rem 2rem 0.01rem #5659a0;
+    }
+
+    .infoBlockHeading {
+        width: 6.5rem;
+        font-size: 1.4rem;
+        padding: 0.5rem 0rem 0.5rem 2rem;
+    }
+
+    .dataShowerInfoBlock {
+        height: auto;
+    }
+
+    .infoBlockData {
+        padding: 0.4rem 0rem 0rem 2rem;
+        font-size: 1.3rem;
+    }
+
+    .dataShowerHeading {
+        width: 5rem;
+        margin-top: -1.5rem;
+        margin-left: 3rem;
+        font-size: 2.3rem;
+        padding: 0.5rem 0rem 0.5rem 3rem;
+        border-radius: 0.3rem;
+    }
+
+    .firstDataShowerInfoBlock {
+        margin-top: 3rem;
+    }
+
+    .transactionContainer {
+        max-height: 38rem;
+        margin-top: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .infoBlockHeading {
+        width: 6rem;
+        font-size: 1.3rem;
+        padding: 0.5rem 0rem 0.5rem 1rem;
+    }
+
+    .infoBlockData {
+        padding: 0.4rem 0rem 0rem 1rem;
+        font-size: 1.2rem;
+        overflow-x: auto;
+        padding-right: 0.5rem;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .infoBlockData::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+/* Loading Component Styling */
+
+.mainLoader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    background-color: #1f1b2dc4;
+}
+
+.subLoader {
+    color: white;
+    font-size: 4rem;
+    font-family: 'Mulish', sans-serif;
+    background-color: #9799d1;
+    padding: 0.5rem 1.5rem;
+    border-radius: 100%;
+}
+
+.animatorDiv {
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: #362e52;
+    position: relative;
+    animation: moveLoader 2s infinite;
+    animation-timing-function: ease-in-out;
+    left: -43px;
+    top: -12px;
+    border-radius: 50%;
+}
+
+
+@keyframes moveLoader {
+    0% {
+        left: -43px;
+        top: -12px;
+    }
+
+    25% {
+        left: -35.5px;
+        top: 12px;
+    }
+
+    50% {
+        left: -19.2px;
+        top: -12px;
+    }
+
+    75% {
+        left: -35.5px;
+        top: 12px;
+    }
+
+    100% {
+        left: -43px;
+        top: -12px;
+    }
+}
+
+
+/* CreateAccount Component Styling */
+
+/* Check SendETH Styling Part For 
+   "mainFormContainer,
+    subFormContainer,
+    formContainerHeading,
+    takeInfoBlock,
+    dataShowerInfoBlock,
+    infoBlockHeading,
+    submitBTNMain,
+    submitBTN"  */
+
+/* Check DataShower Styling Part For 
+   "formContainerHeading,
+    "  */
+
+.submitBTN {
+    margin-top: 2rem;
+}
+
+.takeInfo {
+    padding: 0.6rem 1.5rem 0.6rem 4rem;
+}
+
+.mistakeShower {
+    color: red;
+    background-color: #ffd0d0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Kanit', sans-serif;
+    overflow: hidden;
+    height: 3rem;
+    transition: all 0.2s;
+    width: 0%;
+
+}
+
+@media screen and (max-width: 450px) {
+    .formContainerHeading {
+        width: 10rem;
+        margin-top: -1.5rem;
+        margin-left: 4rem;
+        font-size: 2.2rem;
+        padding: 1rem 0rem 1rem 2rem;
+        border-radius: 0.3rem;
+    }
+}
+
+
+/* Error 404 Error Page Styling*/
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.div2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.err1 {
+    font-size: 8rem;
+    font-family: "Archivo Black", sans-serif;
+}
+
+.err1 h1 {
+    margin: 0%;
+    background: -webkit-linear-gradient(#eee, #3f8bf1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.message1 {
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 0.2rem;
+    color: #535765;
+    font-size: 2rem;
+}
+
+.op40 h1 {
+    position: relative;
+    animation: mova1 1s infinite;
+}
+
+@keyframes mova1 {
+    from {
+        left: -1rem;
+    }
+
+    to {
+        left: auto;
+    }
+}
+
+.op41 h1 {
+    position: relative;
+    animation: mova11 0.5s infinite;
+}
+
+@keyframes mova11 {
+    from {
+        left: -1rem;
+    }
+
+    to {
+        left: auto;
+    }
+}
+
+.op42 h1 {
+    position: relative;
+    animation: mova111 0.8s infinite;
+}
+
+@keyframes mova111 {
+    from {
+        left: -1rem;
+    }
+
+    to {
+        left: auto;
+    }
+}
