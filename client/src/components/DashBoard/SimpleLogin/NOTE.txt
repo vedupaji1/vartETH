@@ -1,0 +1,3 @@
+In This Folder Those Files Are Stored Or Residing Which Will Only Use When User Will Create Account Using VARt ETH System Or Without Metamask.
+Code Of Files Of This Folder Is Similar To Code Of "MetamaskLogin" Folder's File.
+For Improving Readability And Simplification This Folder Is Crated.
